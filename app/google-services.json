@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "822930182678",
+    "project_id": "mcsynergy-55878",
+    "storage_bucket": "mcsynergy-55878.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822930182678:android:6f6191a5364784eccb9b37",
+        "android_client_info": {
+          "package_name": "josian.vanefferen.mcsynergy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822930182678-8amtqm0pvimk7ci2litm0r3rto95jk1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFgIwUnHf4wv4Kju9qKqbGuGqXI3ZPWRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822930182678-8amtqm0pvimk7ci2litm0r3rto95jk1p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "822930182678-6vjmrruagi4cdo0aa6mgfl3icmc90fdl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "josian.vanefferen.MCSynergy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
