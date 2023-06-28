@@ -13,11 +13,11 @@ android {
 
     defaultConfig {
         applicationId "josian.vanefferen.mcsynergy"
-        minSdk 31
+        minSdk 28
         targetSdk 33
         compileSdk 33
         versionCode 1
-        versionName "1.0"
+        versionName "0.1.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
