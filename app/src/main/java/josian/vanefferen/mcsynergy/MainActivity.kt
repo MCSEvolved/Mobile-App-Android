@@ -32,30 +32,18 @@ class MainActivity : ComponentActivity() {
 
     private fun askNotificationPermission() {
         // This is only necessary for API level >= 33 (TIRAMISU)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ContextCompat.checkSelfPermission(this, POST_NOTIFICATIONS) ==
-                PackageManager.PERMISSION_GRANTED
-            ) {
-                // FCM SDK (and your app) can post notifications.
-            } else if (shouldShowRequestPermissionRationale(POST_NOTIFICATIONS)) {
-                // TODO: display an educational UI explaining to the user the features that will be enabled
-                //       by them granting the POST_NOTIFICATION permission. This UI should provide the user
-                //       "OK" and "No thanks" buttons. If the user selects "OK," directly request the permission.
-                //       If the user selects "No thanks," allow the user to continue without notifications.
-            } else {
-                // Directly ask for the permission
-                requestPermissionLauncher.launch(POST_NOTIFICATIONS)
-            }
-        }
-        else {
-            // Create the NotificationChannel.
-            val name = "notifications"
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val mChannel = NotificationChannel("firebase", name, importance)
-            // Register the channel with the system. You can't change the importance
-            // or other notification behaviors after this.
-            val notificationManager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-            notificationManager.createNotificationChannel(mChannel)
+        if (ContextCompat.checkSelfPermission(this, POST_NOTIFICATIONS) ==
+            PackageManager.PERMISSION_GRANTED
+        ) {
+            // FCM SDK (and your app) can post notifications.
+        } else if (shouldShowRequestPermissionRationale(POST_NOTIFICATIONS)) {
+            // TODO: display an educational UI explaining to the user the features that will be enabled
+            //       by them granting the POST_NOTIFICATION permission. This UI should provide the user
+            //       "OK" and "No thanks" buttons. If the user selects "OK," directly request the permission.
+            //       If the user selects "No thanks," allow the user to continue without notifications.
+        } else {
+            // Directly ask for the permission
+            requestPermissionLauncher.launch(POST_NOTIFICATIONS)
         }
 
     }
@@ -73,10 +61,5 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
 
 }
