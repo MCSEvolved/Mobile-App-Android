@@ -14,6 +14,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
@@ -25,7 +26,6 @@ import josian.vanefferen.mcsynergy.view.login.LoginScreen
 import josian.vanefferen.mcsynergy.view.navbar.BottomNavigationBar
 import josian.vanefferen.mcsynergy.view.navbar.NavBarItem
 import josian.vanefferen.mcsynergy.view.navbar.Navigation
-
 
 @Composable
 fun MainView() {

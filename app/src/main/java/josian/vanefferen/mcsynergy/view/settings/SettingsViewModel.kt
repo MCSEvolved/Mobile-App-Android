@@ -1,6 +1,5 @@
 package josian.vanefferen.mcsynergy.view.settings
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.ktx.auth
