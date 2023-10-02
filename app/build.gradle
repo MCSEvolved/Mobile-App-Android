@@ -85,6 +85,9 @@ dependencies {
     implementation("com.google.firebase:firebase-messaging-ktx:23.2.1")
     implementation 'com.google.firebase:firebase-auth-ktx:22.1.2'
 
+    //SignalR
+    implementation 'com.microsoft.signalr:signalr:7.0.0'
+
 
 }
 
