@@ -18,6 +18,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import josian.vanefferen.mcsynergy.view.home.HomeScreen
+import josian.vanefferen.mcsynergy.view.home.tracker.TrackerHomeScreen
+import josian.vanefferen.mcsynergy.view.home.tracker.turtles.TurtlesHomeScreen
 import josian.vanefferen.mcsynergy.view.notification.NotificationScreen
 import josian.vanefferen.mcsynergy.view.settings.SettingsScreen
 import josian.vanefferen.mcsynergy.view.settings.categories.notification.NotificationSettingsScreen
@@ -38,7 +40,12 @@ fun Navigation(navController: NavHostController) {
         composable("settings/notifications") {
             NotificationSettingsScreen(navController)
         }
-
+        composable("home/tracker") {
+            TrackerHomeScreen(navController)
+        }
+        composable("home/tracker/turtles") {
+            TurtlesHomeScreen(navController)
+        }
 
 
     }

@@ -119,7 +119,7 @@ private fun SettingsList(navController: NavController) {
         trailingContent = {Icon(
             imageVector = Icons.Outlined.ChevronRight,
             contentDescription = "Notification Icon",
-            tint = Color.White
+            tint = Color.LightGray
         )},
         colors = ListItemDefaults.colors(
             containerColor = Color.Transparent
