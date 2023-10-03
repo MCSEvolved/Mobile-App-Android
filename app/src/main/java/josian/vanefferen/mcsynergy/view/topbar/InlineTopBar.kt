@@ -48,7 +48,7 @@ fun InlineTopBar(title: String, showBackButton: Boolean, navController: NavContr
                 },
                 scrollBehavior = null,
                 colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.background,
+                    containerColor = MaterialTheme.colorScheme.primaryContainer,
                     scrolledContainerColor = MaterialTheme.colorScheme.primaryContainer,
                     titleContentColor = Color.White,
                     navigationIconContentColor = Color.White,
